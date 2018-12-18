@@ -12,6 +12,7 @@
 		929FE0B797FCDC241098A720 /* Pods_ActionPickerClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63BCF1ECD36C88093B173EB5 /* Pods_ActionPickerClient.framework */; };
 		F47EDAA421C92393005A9A11 /* SuggesterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47EDAA321C92393005A9A11 /* SuggesterView.swift */; };
 		F47EDAA621C9541C005A9A11 /* SuggesterViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47EDAA521C9541C005A9A11 /* SuggesterViewItem.swift */; };
+		F47EDAA921C95977005A9A11 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47EDAA821C95977005A9A11 /* Theme.swift */; };
 		F4CFA10021C8A3CF00E3F92A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CFA0FF21C8A3CF00E3F92A /* AppDelegate.swift */; };
 		F4CFA10221C8A3CF00E3F92A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CFA10121C8A3CF00E3F92A /* ViewController.swift */; };
 		F4CFA10521C8A3CF00E3F92A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4CFA10321C8A3CF00E3F92A /* Main.storyboard */; };
@@ -50,6 +51,7 @@
 		E5AB97589294D09761B616CC /* Pods-ActionPickerClientUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ActionPickerClientUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ActionPickerClientUITests/Pods-ActionPickerClientUITests.release.xcconfig"; sourceTree = "<group>"; };
 		F47EDAA321C92393005A9A11 /* SuggesterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggesterView.swift; sourceTree = "<group>"; };
 		F47EDAA521C9541C005A9A11 /* SuggesterViewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggesterViewItem.swift; sourceTree = "<group>"; };
+		F47EDAA821C95977005A9A11 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		F4CFA0FC21C8A3CF00E3F92A /* ActionPickerClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ActionPickerClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4CFA0FF21C8A3CF00E3F92A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4CFA10121C8A3CF00E3F92A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 			children = (
 				F47EDAA321C92393005A9A11 /* SuggesterView.swift */,
 				F47EDAA521C9541C005A9A11 /* SuggesterViewItem.swift */,
+				F47EDAA821C95977005A9A11 /* Theme.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -397,6 +400,7 @@
 				F47EDAA621C9541C005A9A11 /* SuggesterViewItem.swift in Sources */,
 				F4CFA10821C8A3CF00E3F92A /* ActionPickerClient.xcdatamodeld in Sources */,
 				F4CFA10221C8A3CF00E3F92A /* ViewController.swift in Sources */,
+				F47EDAA921C95977005A9A11 /* Theme.swift in Sources */,
 				F47EDAA421C92393005A9A11 /* SuggesterView.swift in Sources */,
 				F4CFA10021C8A3CF00E3F92A /* AppDelegate.swift in Sources */,
 			);

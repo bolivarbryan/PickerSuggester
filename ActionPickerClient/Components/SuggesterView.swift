@@ -8,16 +8,19 @@ protocol SuggesterViewDelegate {
 
 class SuggesterView {
 
-    enum Style {
-        case dark
-        case light
-    }
+    //MARK: - Properties
+
+    var datasource: PickerDataSource?
+    var delegate: SuggesterViewDelegate?
+    var picker: ActionSheetMultipleStringPicker?
+    var style = Style.light
+
+    //ActionSheetPicker requires an array of arrays for its own datasource
 
     enum PickerDataSource: String {
         case weight = "Weight"
         case size = "Size"
 
-        //ActionSheetPicker requires an array of arrays for its own datasource
         func fetchData() -> [[String]] {
             switch self {
             case .weight:
@@ -37,10 +40,6 @@ class SuggesterView {
             }
         }
     }
-
-    var datasource: PickerDataSource?
-    var delegate: SuggesterViewDelegate?
-    var picker: ActionSheetMultipleStringPicker?
 
     //MARK: - UI Configuration
 
@@ -73,7 +72,7 @@ class SuggesterView {
 
         //Transforming data for suggesterView
         let items = datasource.fetchSuggestions().map( { title -> SuggesterViewItem in
-            let item = SuggesterViewItem(title: title)
+            let item = SuggesterViewItem(title: title, style: style)
             item.delegate = self
             return item
         })
@@ -93,8 +92,10 @@ class SuggesterView {
             $0.right.equalToSuperview().offset(-10)
             $0.bottom.top.equalToSuperview()
         }
-        suggester.backgroundColor = .darkGray
+
+        suggester.backgroundColor = style.backgroundColor
     }
+
 }
 
 extension SuggesterView: SuggesterViewItemDelegate {

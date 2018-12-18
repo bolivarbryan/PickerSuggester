@@ -18,7 +18,7 @@ class SuggesterViewItem: UIView {
     var delegate: SuggesterViewItemDelegate?
 
     //MARK: - Required
-    init(title: String) {
+    init(title: String, style: Style) {
         self.title = title
         super.init(frame: CGRect.zero)
         addSubview(button)
@@ -28,11 +28,12 @@ class SuggesterViewItem: UIView {
         }
 
         button.setTitle(title, for: .normal)
-        button.setTitleColor(.lightGray, for: .highlighted)
+        button.setTitleColor(style.backgroundColor, for: .highlighted)
+        button.setTitleColor(style.textColor, for: .normal)
 
         let divider = UIView(frame: CGRect.zero)
         addSubview(divider)
-        divider.backgroundColor = .lightGray
+        divider.backgroundColor = style.textColor
         divider.snp.makeConstraints {
             $0.height.equalTo(20)
             $0.width.equalTo(1)
