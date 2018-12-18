@@ -9,6 +9,7 @@ class ViewController: UIViewController {
 
     @IBAction func showPicker(_ sender: Any) {
         let s = SuggesterView()
+        s.style = .dark
         s.presentPicker(sender, datasource: .size)
     }
 }
