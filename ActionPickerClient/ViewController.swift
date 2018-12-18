@@ -10,7 +10,7 @@ class ViewController: UIViewController {
 
     @IBAction func showPicker(_ sender: Any) {
         let s = SuggesterView()
-        s.presentPicker(sender, datasource: .meters)
+        s.presentPicker(sender, datasource: .size)
     }
 }
 

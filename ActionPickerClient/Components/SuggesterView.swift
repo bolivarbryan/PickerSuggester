@@ -13,16 +13,16 @@ class SuggesterView {
         case light
     }
 
-    enum PickerDataSource {
-        case weight
-        case meters
+    enum PickerDataSource: String {
+        case weight = "Weight"
+        case size = "Size"
 
         //ActionSheetPicker requires an array of arrays for its own datasource
         func fetchData() -> [[String]] {
             switch self {
             case .weight:
                 return [["50 g", "100 g", "200 g", "300 g"]]
-            case .meters:
+            case .size:
                 return [["50 cm", "100 cm", "200 cm", "300 cm"]]
             }
         }
@@ -31,7 +31,7 @@ class SuggesterView {
             switch self {
             case .weight:
                 return ["50 g", "100 g", "200 g"]
-            case .meters:
+            case .size:
                 return ["50 cm", "100 cm", "200 cm"]
 
             }
@@ -46,7 +46,7 @@ class SuggesterView {
 
     func presentPicker(_ sender: Any, datasource: PickerDataSource) {
 
-        picker = ActionSheetMultipleStringPicker.init(title: "aaa",
+        picker = ActionSheetMultipleStringPicker.init(title: datasource.rawValue,
                                                                 rows: datasource.fetchData(),
                                                                 initialSelection: [2],
                                                                 doneBlock: { picker, indexes, values in
