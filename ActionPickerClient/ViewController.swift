@@ -1,20 +1,16 @@
-//
-//  ViewController.swift
-//  ActionPickerClient
-//
-//  Created by Bryan A Bolivar M on 12/17/18.
-//  Copyright © 2018 Dev. All rights reserved.
-//
-
 import UIKit
+import ActionSheetPicker_3_0
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
     }
 
-
+    @IBAction func showPicker(_ sender: Any) {
+        let s = SuggesterView()
+        s.presentPicker(sender, datasource: .meters)
+    }
 }
 

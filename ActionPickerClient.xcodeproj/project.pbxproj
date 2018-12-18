@@ -10,6 +10,7 @@
 		0D18A5E963E96C5F7A11D71D /* Pods_ActionPickerClientUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BF3F737DED8B3E08F549C97 /* Pods_ActionPickerClientUITests.framework */; };
 		8EA3AE9E905B1192D9EE0CC5 /* Pods_ActionPickerClientTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17C904936F2D940DA2C823DD /* Pods_ActionPickerClientTests.framework */; };
 		929FE0B797FCDC241098A720 /* Pods_ActionPickerClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63BCF1ECD36C88093B173EB5 /* Pods_ActionPickerClient.framework */; };
+		F47EDAA421C92393005A9A11 /* SuggesterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47EDAA321C92393005A9A11 /* SuggesterView.swift */; };
 		F4CFA10021C8A3CF00E3F92A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CFA0FF21C8A3CF00E3F92A /* AppDelegate.swift */; };
 		F4CFA10221C8A3CF00E3F92A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CFA10121C8A3CF00E3F92A /* ViewController.swift */; };
 		F4CFA10521C8A3CF00E3F92A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4CFA10321C8A3CF00E3F92A /* Main.storyboard */; };
@@ -46,6 +47,7 @@
 		A72817A45E102B972AC7574C /* Pods-ActionPickerClientUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ActionPickerClientUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ActionPickerClientUITests/Pods-ActionPickerClientUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D276F4A569A8FC80CADCD228 /* Pods-ActionPickerClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ActionPickerClient.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ActionPickerClient/Pods-ActionPickerClient.debug.xcconfig"; sourceTree = "<group>"; };
 		E5AB97589294D09761B616CC /* Pods-ActionPickerClientUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ActionPickerClientUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ActionPickerClientUITests/Pods-ActionPickerClientUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F47EDAA321C92393005A9A11 /* SuggesterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggesterView.swift; sourceTree = "<group>"; };
 		F4CFA0FC21C8A3CF00E3F92A /* ActionPickerClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ActionPickerClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4CFA0FF21C8A3CF00E3F92A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4CFA10121C8A3CF00E3F92A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -114,6 +116,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		F47EDAA221C92310005A9A11 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				F47EDAA321C92393005A9A11 /* SuggesterView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		F4CFA0F321C8A3CF00E3F92A = {
 			isa = PBXGroup;
 			children = (
@@ -139,6 +149,7 @@
 		F4CFA0FE21C8A3CF00E3F92A /* ActionPickerClient */ = {
 			isa = PBXGroup;
 			children = (
+				F47EDAA221C92310005A9A11 /* Components */,
 				F4CFA0FF21C8A3CF00E3F92A /* AppDelegate.swift */,
 				F4CFA10121C8A3CF00E3F92A /* ViewController.swift */,
 				F4CFA10321C8A3CF00E3F92A /* Main.storyboard */,
@@ -307,10 +318,16 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ActionPickerClient/Pods-ActionPickerClient-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/ActionSheetPicker-3.0/ActionSheetPicker_3_0.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ActionSheetPicker_3_0.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -380,6 +397,7 @@
 			files = (
 				F4CFA10821C8A3CF00E3F92A /* ActionPickerClient.xcdatamodeld in Sources */,
 				F4CFA10221C8A3CF00E3F92A /* ViewController.swift in Sources */,
+				F47EDAA421C92393005A9A11 /* SuggesterView.swift in Sources */,
 				F4CFA10021C8A3CF00E3F92A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
