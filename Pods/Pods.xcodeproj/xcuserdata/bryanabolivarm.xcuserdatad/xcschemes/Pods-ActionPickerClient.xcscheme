@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8FA47C3092957CB5CB7E80588B9161D7"
+               BlueprintIdentifier = "7E51DAEE4DE49B93818158670C733405"
                BuildableName = "Pods_ActionPickerClient.framework"
                BlueprintName = "Pods-ActionPickerClient"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8FA47C3092957CB5CB7E80588B9161D7"
+            BlueprintIdentifier = "7E51DAEE4DE49B93818158670C733405"
             BuildableName = "Pods_ActionPickerClient.framework"
             BlueprintName = "Pods-ActionPickerClient"
             ReferencedContainer = "container:Pods.xcodeproj">

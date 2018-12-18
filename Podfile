@@ -8,8 +8,6 @@ target 'ActionPickerClient' do
   # Pods for ActionPickerClient
   pod 'ActionSheetPicker-3.0'
   pod 'SnapKit'
-  pod 'RxSwift'
-  pod 'RxCocoa'
 
   target 'ActionPickerClientTests' do
     inherit! :search_paths

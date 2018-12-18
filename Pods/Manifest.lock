@@ -1,29 +1,20 @@
 PODS:
   - ActionSheetPicker-3.0 (2.3.0)
-  - RxCocoa (4.2.0):
-    - RxSwift (~> 4.0)
-  - RxSwift (4.2.0)
   - SnapKit (4.0.0)
 
 DEPENDENCIES:
   - ActionSheetPicker-3.0
-  - RxCocoa
-  - RxSwift
   - SnapKit
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - ActionSheetPicker-3.0
-    - RxCocoa
-    - RxSwift
     - SnapKit
 
 SPEC CHECKSUMS:
   ActionSheetPicker-3.0: eef157d75e151f255c5333d26656c7fbfe905a51
-  RxCocoa: 0b54909c902e1e581212a03e690bbd94032d8baa
-  RxSwift: 99e10317ddfcc7fbe01356aafd118fde4a0be104
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
 
-PODFILE CHECKSUM: 159bc53fe453021a91ec57d55ef04493c9d92e9e
+PODFILE CHECKSUM: e5a3e41fa9aeb8d3582b850b47d1a253495b4d6e
 
 COCOAPODS: 1.5.3
