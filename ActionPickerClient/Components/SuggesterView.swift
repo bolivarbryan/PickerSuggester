@@ -133,6 +133,7 @@ class SuggesterViewItem: UIView {
             $0.height.equalTo(20)
             $0.width.equalTo(0.5)
             $0.right.equalToSuperview()
+            $0.centerY.equalToSuperview()
         }
 
         button.addTarget(self, action: #selector(selectItem), for: .touchUpInside)
